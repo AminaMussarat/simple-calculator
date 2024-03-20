@@ -2,12 +2,12 @@
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     {
-        message: "Enter first number",
+        message: "Enter the first number",
         type: "number",
         name: "firstNumber",
     },
     {
-        message: "Enter second number",
+        message: "Enter the second number",
         type: "number",
         name: "secondNumber",
     },
@@ -34,3 +34,4 @@ else if (answer.operater === "Division") {
 else {
     console.log("please choice a valid operation");
 }
+console.log("finished");
