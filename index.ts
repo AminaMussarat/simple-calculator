@@ -16,19 +16,20 @@ const answer = await inquirer.prompt([
   {
     message: "select one of the operator",
     type: "list",
-    name: "operater",
+    name: "operator",
     choices: ["Addition", "Subtraction", "Multiplication", "Division"],
   },
 ]);
 
 //conditinal statement
+
 if (answer.operator === "Addition") {
   console.log(answer.firstNumber + answer.secondNumber);
-} else if (answer.operater === "Substraction") {
+} else if (answer.operator === "Substraction") {
   console.log(answer.firstNumber - answer.secondNumber);
-} else if (answer.operater === "Multiplication") {
+} else if (answer.operator === "Multiplication") {
   console.log(answer.firstNumber * answer.secondNumber);
-} else if (answer.operater === "Division") {
+} else if (answer.operator === "Division") {
   console.log(answer.firstNumber / answer.secondNumber);
 } else {
   console.log("please choice a valid operation");
